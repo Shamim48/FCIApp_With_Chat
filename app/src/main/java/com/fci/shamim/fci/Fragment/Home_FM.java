@@ -15,11 +15,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.fci.shamim.fci.About_FCI;
+import com.fci.shamim.fci.Principal;
 import com.fci.shamim.fci.R;
 
 
 public class Home_FM extends Fragment implements View.OnClickListener {
   private CardView aboutFCICv;
+  private CardView principalCv;
 
     public Home_FM() {
         // Required empty public constructor
@@ -40,6 +42,7 @@ public class Home_FM extends Fragment implements View.OnClickListener {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         aboutFCICv=view.findViewById(R.id.aboutFCICvId);
+        principalCv=view.findViewById(R.id.principalCVId);
         aboutFCICv.setOnClickListener(this);
 
         super.onViewCreated(view, savedInstanceState);
@@ -51,6 +54,10 @@ public class Home_FM extends Fragment implements View.OnClickListener {
         if(view.getId()==R.id.aboutFCICvId){
 
             Intent i=new Intent(getContext(), About_FCI.class);
+            startActivity(i);
+        }
+        else if(view.getId()==R.id.principalCVId){
+            Intent i=new Intent(getContext(), Principal.class);
             startActivity(i);
         }
     }

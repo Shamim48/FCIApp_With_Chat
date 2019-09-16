@@ -96,6 +96,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="6dp"
+                android:id="@+id/principalCVId"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="12dp"
                 >
