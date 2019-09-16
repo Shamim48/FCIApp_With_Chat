@@ -57,6 +57,7 @@ public class Home_FM extends Fragment implements View.OnClickListener {
             startActivity(i);
         }
         else if(view.getId()==R.id.principalCVId){
+            //sss
             Intent i=new Intent(getContext(), Principal.class);
             startActivity(i);
         }
