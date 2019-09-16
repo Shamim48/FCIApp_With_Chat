@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".About_FCI"></activity>
+        <activity android:name=".Principal"></activity>
+        <activity android:name=".About_FCI" />
         <activity
             android:name=".Home"
             android:label="@string/title_activity_home"
