@@ -176,8 +176,7 @@ public class Home extends AppCompatActivity
             }
         });
 */
-
-
+//some thing change
     }
 
     public class ViewPagerAdapter extends FragmentPagerAdapter {
